@@ -1178,9 +1178,9 @@
               "build_extra_args": [],
               "patches": [],
               "patch_args": [],
-              "sum": "h1:zdAyfUGbYmuVokhzVmghFl2ZJh5QhcfebBgmVPFYA+8=",
+              "sum": "h1:abc123",
               "replace": "",
-              "version": "v0.15.0"
+              "version": "v0.0.0-20210405180319-a5a99cb37ef4"
             }
           },
           "com_github_bazelbuild_buildtools": {

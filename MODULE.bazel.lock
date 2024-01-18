@@ -1040,7 +1040,8 @@
             "bzlFile": "@@bazel_tools//tools/sh:sh_configure.bzl",
             "ruleClassName": "sh_config",
             "attributes": {
-              "name": "bazel_tools~sh_configure_extension~local_config_sh"
+              "name": "bazel_tools~sh_configure_extension~local_config_sh",
+              "SweepShellConfig": "shell_specific_value"
             }
           }
         }

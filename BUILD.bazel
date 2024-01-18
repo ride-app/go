@@ -1,8 +1,18 @@
-load("@gazelle//:def.bzl", "gazelle")
+load("@bazel_gazelle//:def.bzl", "gazelle")
 
 # gazelle:prefix github.com/ride-app/go
 # gazelle:build_file_name BUILD.bazel
 # gazelle:proto disable_global
 gazelle(
     name = "gazelle",
+)
+
+gazelle(
+    name = "gazelle-update-repos-go",
+    args = [
+        "-from_file=go.mod",
+        "-to_macro=go_deps.bzl%go_dependencies",
+        "-prune",
+    ],
+    command = "update-repos",
 )

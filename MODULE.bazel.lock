@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "6415eb81ea71fa27faea672c68ec8c92f3328ad45806360afc2839c2187e0ef5",
+  "moduleFileHash": "1101d2b5cc79b9dd6a61d8487bbb720b38678466fc4051f3f1e7068b7bf04a4b",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -17,20 +17,20 @@
   },
   "moduleDepGraph": {
     "<root>": {
-      "name": "",
-      "version": "",
+      "name": "ride_go",
+      "version": "0.1",
       "key": "<root>",
-      "repoName": "",
+      "repoName": "ride_go",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
       "extensionUsages": [
         {
-          "extensionBzlFile": "@gazelle//:extensions.bzl",
+          "extensionBzlFile": "@bazel_gazelle//:extensions.bzl",
           "extensionName": "go_deps",
           "usingModule": "<root>",
           "location": {
             "file": "@@//:MODULE.bazel",
-            "line": 4,
+            "line": 9,
             "column": 24
           },
           "imports": {
@@ -49,7 +49,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 5,
+                "line": 10,
                 "column": 18
               }
             }
@@ -59,8 +59,8 @@
         }
       ],
       "deps": {
-        "gazelle": "gazelle@0.35.0",
-        "rules_go": "rules_go@0.44.2",
+        "bazel_gazelle": "gazelle@0.35.0",
+        "io_bazel_rules_go": "rules_go@0.44.2",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       }
@@ -1046,7 +1046,7 @@
       "general": {
         "bzlTransitiveDigest": "zP01muRk4s4xWGK3gNPXOyDMQkOPsIhu99akeKWFFQ0=",
         "accumulatedFileDigests": {
-          "@@//:go.mod": "a509bd135c562cdcf6c401624d2851991ff37d8b991d2eaced4cd4ec49999b8d",
+          "@@//:go.mod": "87599875a7e248b117273f4d6d948550eab095400840342f172da0d45bd4cabe",
           "@@rules_go~0.44.2//:go.mod": "de22304b720f7f61350ec1c9739de6c0a1b1103fd22bfeb6e92c6c843ddc6d6e",
           "@@//:go.sum": "49031eaac91ebcb9e2b2c197f5551820dbefcf7a0b84adcccf3c699e608b60f1",
           "@@gazelle~0.35.0//:go.mod": "48dc6e771c3028ee1c18b9ffc81e596fd5f6d7e0016c5ef280e30f2821f60473",

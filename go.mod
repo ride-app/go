@@ -3,10 +3,10 @@ module github.com/ride-app/go
 go 1.21.5
 
 require (
-	connectrpc.com/connect v1.14.0
-	github.com/MicahParks/keyfunc/v3 v3.2.4
-	github.com/golang-jwt/jwt/v5 v5.2.0
-	go.uber.org/zap v1.26.0
+	connectrpc.com/connect v1.14.2
+	github.com/MicahParks/keyfunc/v3 v3.3.0
+	github.com/golang-jwt/jwt/v5 v5.3.1
+	go.uber.org/zap v1.27.0
 )
 
 require (

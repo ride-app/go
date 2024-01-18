@@ -1,0 +1,49 @@
+load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
+load("@io_bazel_rules_go//go:def.bzl", "go_rules_dependencies", "go_register_toolchains")
+
+workspace(name = "go_common_packages")
+
+# Fetch rules_go and gazelle dependencies
+go_rules_dependencies()
+
+# Register Go toolchains
+go_register_toolchains()
+
+# Fetch gazelle dependencies
+gazelle_dependencies()
+
+# Define Go repositories for dependencies
+go_repository(
+    name = "org_golang_x_net",
+    importpath = "golang.org/x/net",
+    sum = "h1:abc123",
+    version = "v0.0.0-20210405180319-a5a99cb37ef4",
+)
+
+# Define build and test sweep configurations
+go_binary(
+    name = "go_package_binary",
+    srcs = ["main.go"],
+    deps = [":go_default_library"],
+    tags = ["sweep"],
+)
+
+go_test(
+    name = "go_package_test",
+    srcs = ["main_test.go"],
+    deps = [":go_default_library"],
+    tags = ["sweep"],
+    test_env = {
+        "GO_TEST_ENV_VAR": "value",
+    },
+)
+
+# Conditional build configurations
+config_setting(
+    name = "linux_amd64",
+    values = {"cpu": "linux_amd64"},
+)
+
+select({
+    ":linux_amd64": ["//conditions:default"],
+})

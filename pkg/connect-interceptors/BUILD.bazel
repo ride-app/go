@@ -1,0 +1,17 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "connect-interceptors",
+    srcs = [
+        "firebase_auth_iterceptor.go",
+        "paic_interceptor.go",
+    ],
+    importpath = "github.com/ride-app/go/pkg/connect-interceptors",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//pkg/logger",
+        "@com_connectrpc_connect//:go_default_library",
+        "@com_github_golang_jwt_jwt_v5//:go_default_library",
+        "@com_github_micahparks_keyfunc_v3//:go_default_library",
+    ],
+)

@@ -201,9 +201,9 @@
         {
           "extensionBzlFile": "@io_bazel_rules_go//go:extensions.bzl",
           "extensionName": "go_sdk",
-          "usingModule": "rules_go@0.44.2",
+          "usingModule": "rules_go@0.47.0",
           "location": {
-            "file": "https://bcr.bazel.build/modules/rules_go/0.44.2/MODULE.bazel",
+            "file": "https://bcr.bazel.build/modules/rules_go/0.47.0/MODULE.bazel",
             "line": 14,
             "column": 23
           },
@@ -283,11 +283,11 @@
         "bzlFile": "@bazel_tools//tools/build_defs/repo:http.bzl",
         "ruleClassName": "http_archive",
         "attributes": {
-          "name": "rules_go~0.44.2",
+          "name": "rules_go~0.47.0",
           "urls": [
-            "https://github.com/bazelbuild/rules_go/releases/download/v0.44.2/rules_go-v0.44.2.zip"
+            "https://github.com/bazelbuild/rules_go/releases/download/v0.47.0/rules_go-v0.47.0.zip"
           ],
-          "integrity": "sha256-fHbWI2so/2laoozzX5XeMXqUcv0fsUrHl8m/aE8Js3w=",
+          "integrity": "sha256-iHD4A1wPdso8Jra6xodwssf29j7uS8c0DWdMhxyoDnw=",
           "strip_prefix": "",
           "remote_patches": {},
           "remote_patch_strip": 0

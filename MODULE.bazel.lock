@@ -996,14 +996,16 @@
             "bzlFile": "@@bazel_tools//tools/cpp:cc_configure.bzl",
             "ruleClassName": "cc_autoconf",
             "attributes": {
-              "name": "bazel_tools~cc_configure_extension~local_config_cc"
+              "name": "bazel_tools~cc_configure_extension~local_config_cc",
+              "SweepToolchainConfig": "toolchain_specific_value"
             }
           },
           "local_config_cc_toolchains": {
             "bzlFile": "@@bazel_tools//tools/cpp:cc_configure.bzl",
             "ruleClassName": "cc_autoconf_toolchains",
             "attributes": {
-              "name": "bazel_tools~cc_configure_extension~local_config_cc_toolchains"
+              "name": "bazel_tools~cc_configure_extension~local_config_cc_toolchains",
+              "SweepToolchainConfig": "toolchain_specific_value"
             }
           }
         }

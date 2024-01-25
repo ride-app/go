@@ -1,6 +1,6 @@
-name: PR
+name: Pull Request Validation
 
-permissions: read-all
+permissions: write-all
 
 on:
   pull_request:
@@ -28,17 +28,17 @@ jobs:
       - name: Build
         run: bazelisk build //...
 
-      # - name: Unit Tests
-      #   run: go run github.com/onsi/ginkgo/v2/ginkgo -r --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --coverprofile=cover.json --race --trace --json-report=report.json --timeout=10m -ldflags "-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn" -tags=unit_tests
+      - name: Unit Tests
+        run: go run github.com/onsi/ginkgo/v2/ginkgo -r --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --coverprofile=cover.json --race --trace --json-report=report.json --timeout=10m -ldflags "-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn" -tags=unit_tests
 
       # - name: Upload coverage to Codecov
-      #   uses: codecov/codecov-action@v3
-      #   with:
-      #     token: ${{ secrets.CODECOV_TOKEN }}
-      #     flags: unit-tests
-      #     files: ./cover.json,./report.json
-      #     fail_ci_if_error: true
-      #     verbose: true
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unit-tests
+          files: ./cover.json,./report.json
+          fail_ci_if_error: true
+          verbose: true
 
   compute_impacted_targets:
     uses: deb-tech-n-sol/workflows/.github/workflows/compute-impacted-targets.yaml@main
@@ -46,7 +46,7 @@ jobs:
 
   auto_merge:
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
     name: Auto Merge PR if bot
     uses: deb-tech-n-sol/workflows/.github/workflows/auto-merge.yaml@main

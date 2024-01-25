@@ -16,4 +16,4 @@ Located in `pkg/logger`, this package provides a logging interface with implemen
 
 This project uses Bazel as its build system. To build the project, you need to have Bazel installed on your machine. Once installed, you can build the project by running the following command in the root directory of the project:
 
-```bazel build //...```
+`bazel build //...`

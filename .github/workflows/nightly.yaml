@@ -1,10 +1,10 @@
-name: Nightly
+name: Nightly Trunk Upgrade Workflow
 
 permissions: read-all
 
 on:
   schedule:
-    - cron: 0 0 * * 0-6
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,11 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
+      contents: write
+      pull-requests: write
       contents: write # For trunk to create PRs
       pull-requests: write # For trunk to create PRs
     steps:
       - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        uses: actions/checkout@v2 # Use the latest stable version of checkout
 
       - name: Trunk Upgrade
-        uses: trunk-io/trunk-action/upgrade@97ecd21fe6c743bf7a606791584b683a7995c70e # v1
+        uses: trunk-io/trunk-action/upgrade@v1 # Use the latest stable version of trunk-action

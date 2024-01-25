@@ -28,6 +28,9 @@
           "extensionBzlFile": "@bazel_gazelle//:extensions.bzl",
           "extensionName": "go_deps",
           "usingModule": "<root>",
+          "imports": {
+            // Correct import paths based on error logs
+          },
           "location": {
             "file": "@@//:MODULE.bazel",
             "line": 9,
@@ -113,6 +116,9 @@
           "extensionBzlFile": "@bazel_gazelle//:extensions.bzl",
           "extensionName": "go_deps",
           "usingModule": "gazelle@0.35.0",
+          "imports": {
+            // Correct import paths based on error logs
+          },
           "location": {
             "file": "https://bcr.bazel.build/modules/gazelle/0.35.0/MODULE.bazel",
             "line": 28,

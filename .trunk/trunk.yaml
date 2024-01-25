@@ -36,3 +36,6 @@ actions:
 tools:
   enabled:
     - bazel@7.0.0
+merge:
+  required_statuses:
+    - Build

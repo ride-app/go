@@ -28,7 +28,7 @@ jobs:
           github_token: ${{ github.token }}
 
       - name: Authenticate buf
-        run: echo ${{ secrets.BUF_TOKEN }} | buf registry login --username ${{ env.BUF_USER }} --token-stdin
+        run: echo ${{ secrets.BUF_TOKEN }} | buf registry login --username ${{ env.BUF_USER }} --token-stdin --non-interactive
 
       - name: Build protobuf
         uses: trunk-io/breakpoint@f8a1f08369323ed46f3ef7161d3d0a2fdc3488df # v1

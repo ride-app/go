@@ -26,7 +26,10 @@ jobs:
             ${{ runner.os }}-bazel-
 
       - name: Build
-        run: bazelisk build //...
+        run: |
+          bazelisk run //:gazelle-update-repos-go
+          bazelisk run //:gazelle
+          bazelisk build //...
 
       # - name: Unit Tests
       #   run: go run github.com/onsi/ginkgo/v2/ginkgo -r --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --coverprofile=cover.json --race --trace --json-report=report.json --timeout=10m -ldflags "-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn" -tags=unit_tests

@@ -6,7 +6,11 @@ This repository is a collection of reusable packages written in Go. Each package
 
 ### Connect Interceptors
 
-Located in `pkg/connect-interceptors`, this package provides interceptors for handling Firebase authentication and panic situations in your Go applications built with [connect](https://connect.build).
+Located in `pkg/connect-interceptors`, this package provides interceptors for handling panic situations in your Go applications built with [connect](https://connect.build).
+
+### Connect Middlewares
+
+Located in `pkg/connect-interceptors`, this package provides middlewares for handling Firebase authentication in your Go applications built with [connect](https://connect.build).
 
 ### Logger
 

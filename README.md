@@ -1,4 +1,4 @@
-# ride-app/go
+# deb-tech-n-sol/go
 
 This repository is a collection of reusable packages written in Go. Each package serves a unique purpose and can be used independently or together to build robust applications.
 

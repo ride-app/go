@@ -1,4 +1,4 @@
-module github.com/ride-app/go
+module github.com/deb-tech-n-sol/go
 
 go 1.21.6
 

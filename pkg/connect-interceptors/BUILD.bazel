@@ -6,7 +6,7 @@ go_library(
         "firebase_auth_iterceptor.go",
         "panic_interceptor.go",
     ],
-    importpath = "github.com/ride-app/go/pkg/connect-interceptors",
+    importpath = "github.com/deb-tech-n-sol/go/pkg/connect-interceptors",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/logger",

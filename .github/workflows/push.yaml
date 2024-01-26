@@ -8,34 +8,34 @@ on:
       - main
 
 jobs:
-  coverage:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    name: Upload Coverage
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+  # coverage:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 10
+  #   name: Upload Coverage
+  # steps:
+  #   - name: Checkout Code
+  #     uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
-      - uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2 # v4
-        with:
-          path: |
-            ~/.cache/bazel
-          key: ${{ runner.os }}-bazel-${{ hashFiles('WORKSPACE','MODULE.bazel') }}
-          restore-keys: |
-            ${{ runner.os }}-bazel-
+  #   - uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2 # v4
+  #     with:
+  #       path: |
+  #         ~/.cache/bazel
+  #       key: ${{ runner.os }}-bazel-${{ hashFiles('WORKSPACE','MODULE.bazel') }}
+  #       restore-keys: |
+  #         ${{ runner.os }}-bazel-
 
-      - name: Unit Tests
-        run: bazelisk coverage --combined_report=lcov //...
-        continue-on-error: true
+  #   - name: Unit Tests
+  #     run: bazelisk coverage --combined_report=lcov //...
+  #     continue-on-error: true
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@4fe8c5f003fae66aa5ebb77cfd3e7bfbbda0b6b0 # v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          flags: unit-tests
-          # files: ./cover.json,./report.json
-          fail_ci_if_error: true
-          verbose: true
+  #   - name: Upload coverage to Codecov
+  #     uses: codecov/codecov-action@4fe8c5f003fae66aa5ebb77cfd3e7bfbbda0b6b0 # v3
+  #     with:
+  #       token: ${{ secrets.CODECOV_TOKEN }}
+  #       flags: unit-tests
+  #       # files: ./cover.json,./report.json
+  #       fail_ci_if_error: true
+  #       verbose: true
 
   cache:
     runs-on: ubuntu-latest

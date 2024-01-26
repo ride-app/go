@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "1101d2b5cc79b9dd6a61d8487bbb720b38678466fc4051f3f1e7068b7bf04a4b",
+  "moduleFileHash": "b8aa658e4d20d7315ccc126396835a7312bd77cbd079b83eb91729e37f584f1e",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -34,6 +34,7 @@
             "column": 24
           },
           "imports": {
+            "com_connectrpc_authn": "com_connectrpc_authn",
             "com_connectrpc_connect": "com_connectrpc_connect",
             "com_github_golang_jwt_jwt_v5": "com_github_golang_jwt_jwt_v5",
             "com_github_micahparks_keyfunc_v3": "com_github_micahparks_keyfunc_v3",
@@ -1046,15 +1047,31 @@
       "general": {
         "bzlTransitiveDigest": "zP01muRk4s4xWGK3gNPXOyDMQkOPsIhu99akeKWFFQ0=",
         "accumulatedFileDigests": {
-          "@@//:go.mod": "217404a24c8637def1c37533b64e7e3da166e29792774c7ade4cc31e646ff73f",
+          "@@//:go.mod": "bd87b0f4db00e734eec93716c9164b56863b89c8be1527c8677f24d3165ca13e",
           "@@rules_go~0.44.2//:go.mod": "de22304b720f7f61350ec1c9739de6c0a1b1103fd22bfeb6e92c6c843ddc6d6e",
-          "@@//:go.sum": "4c1fd999c81c8750ae133ef2099bef807d92e28540b832d69d320f7292b91d35",
+          "@@//:go.sum": "2a8f3b423d1a1bc829db15d2d67eaf40ba17f88d947a2c8dfd4b64d2628d3e5d",
           "@@gazelle~0.35.0//:go.mod": "48dc6e771c3028ee1c18b9ffc81e596fd5f6d7e0016c5ef280e30f2821f60473",
           "@@gazelle~0.35.0//:go.sum": "7c4460e8ecb5dd8691a51d4fa2e9e4751108b933636497ce46db499fc2e7a88d",
           "@@rules_go~0.44.2//:go.sum": "d56fdb19b21a5f12bcf625c49432371ac39c2def0f564098fbda107f7c080f40"
         },
         "envVariables": {},
         "generatedRepoSpecs": {
+          "com_connectrpc_authn": {
+            "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
+            "ruleClassName": "go_repository",
+            "attributes": {
+              "name": "gazelle~0.35.0~go_deps~com_connectrpc_authn",
+              "importpath": "connectrpc.com/authn",
+              "build_directives": [],
+              "build_file_generation": "auto",
+              "build_extra_args": [],
+              "patches": [],
+              "patch_args": [],
+              "sum": "h1:m5weACjLWwgwcjttvUDyTPICJKw74+p2obBVrf8hT9E=",
+              "replace": "",
+              "version": "v0.1.0"
+            }
+          },
           "org_golang_x_tools_go_vcs": {
             "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
             "ruleClassName": "go_repository",
@@ -1449,6 +1466,7 @@
             "attributes": {
               "name": "gazelle~0.35.0~go_deps~bazel_gazelle_go_repository_config",
               "importpaths": {
+                "com_connectrpc_authn": "connectrpc.com/authn",
                 "com_connectrpc_connect": "connectrpc.com/connect",
                 "com_github_micahparks_keyfunc_v3": "github.com/MicahParks/keyfunc/v3",
                 "com_github_golang_jwt_jwt_v5": "github.com/golang-jwt/jwt/v5",
@@ -1520,6 +1538,7 @@
         },
         "moduleExtensionMetadata": {
           "explicitRootModuleDirectDeps": [
+            "com_connectrpc_authn",
             "com_connectrpc_connect",
             "com_github_micahparks_keyfunc_v3",
             "com_github_golang_jwt_jwt_v5",

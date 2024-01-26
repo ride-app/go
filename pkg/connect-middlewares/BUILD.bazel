@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "middlewares_lib",
+    srcs = ["firebase_auth.go"],
+    importpath = "github.com/deb-tech-n-sol/go/pkg/middlewares",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@com_connectrpc_authn//:authn",
+        "@com_connectrpc_connect//:connect",
+        "@com_github_golang_jwt_jwt_v5//:jwt",
+        "@com_github_micahparks_keyfunc_v3//:keyfunc",
+    ],
+)

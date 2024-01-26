@@ -2,6 +2,12 @@ load("@bazel_gazelle//:deps.bzl", "go_repository")
 
 def go_dependencies():
     go_repository(
+        name = "com_connectrpc_authn",
+        importpath = "connectrpc.com/authn",
+        sum = "h1:m5weACjLWwgwcjttvUDyTPICJKw74+p2obBVrf8hT9E=",
+        version = "v0.1.0",
+    )
+    go_repository(
         name = "com_connectrpc_connect",
         importpath = "connectrpc.com/connect",
         sum = "h1:PDS+J7uoz5Oui2VEOMcfz6Qft7opQM9hPiKvtGC01pA=",
@@ -58,8 +64,8 @@ def go_dependencies():
     go_repository(
         name = "com_github_stretchr_testify",
         importpath = "github.com/stretchr/testify",
-        sum = "h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=",
-        version = "v1.8.1",
+        sum = "h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=",
+        version = "v1.8.4",
     )
     go_repository(
         name = "in_gopkg_yaml_v3",

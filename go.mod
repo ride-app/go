@@ -3,6 +3,7 @@ module github.com/deb-tech-n-sol/go
 go 1.21.6
 
 require (
+	connectrpc.com/authn v0.1.0
 	connectrpc.com/connect v1.14.0
 	github.com/MicahParks/keyfunc/v3 v3.2.4
 	github.com/golang-jwt/jwt/v5 v5.2.0

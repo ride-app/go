@@ -40,8 +40,8 @@ def go_dependencies():
     go_repository(
         name = "com_github_micahparks_jwkset",
         importpath = "github.com/MicahParks/jwkset",
-        sum = "h1:eHUGJrSO8EetbNnSb7xhlYQ9mX0vQ7Ga9wN1HhGL3i4=",
-        version = "v0.5.7",
+        sum = "h1:TkMEDKFYAcOgLdl2o6z4mI0EDKK8YN1ip1yRi0bVdbw=",
+        version = "v0.5.10",
     )
     go_repository(
         name = "com_github_micahparks_keyfunc_v3",
@@ -106,8 +106,8 @@ def go_dependencies():
     go_repository(
         name = "org_uber_go_multierr",
         importpath = "go.uber.org/multierr",
-        sum = "h1:S0h4aNzvfcFsC3dRF1jLoaov7oRaKqRGC/pUEJ2yvPQ=",
-        version = "v1.10.0",
+        sum = "h1:blXXJkSxSSfBVBlC76pxqeO+LN3aDfLQo+309xJstO0=",
+        version = "v1.11.0",
     )
     go_repository(
         name = "org_uber_go_zap",

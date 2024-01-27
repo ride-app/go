@@ -11,7 +11,7 @@ package main
 import (
   "net/http"
 
-	"github.com/deb-tech-n-sol/pkg/middlewares"
+  "github.com/deb-tech-n-sol/pkg/middlewares"
 
   "connectrpc.com/authn"
   "connectrpc.com/authn/internal/gen/authn/ping/v1/pingv1connect"

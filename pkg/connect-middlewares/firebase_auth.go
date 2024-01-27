@@ -10,7 +10,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-func firebaseAuth(context context.Context, req authn.Request) (*string, error) {
+func FirebaseAuth(context context.Context, req authn.Request) (*string, error) {
   jwksURI := "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com"
 
 	k, err := keyfunc.NewDefault([]string{jwksURI})

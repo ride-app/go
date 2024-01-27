@@ -22,7 +22,7 @@ func main() {
   service := &pingv1connect.UnimplementedPingServiceHandler{}
   mux.Handle(pingv1connect.NewPingServiceHandler(service))
 
-  middleware := authn.NewMiddleware(middlewares.firebaseAuth)
+  middleware := authn.NewMiddleware(middlewares.FirebaseAuth)
   handler := middleware.Wrap(mux)
   http.ListenAndServe("localhost:8080", handler)
 }

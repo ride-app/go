@@ -5,8 +5,5 @@ go_library(
     srcs = ["panic_interceptor.go"],
     importpath = "github.com/deb-tech-n-sol/go/pkg/connect-interceptors",
     visibility = ["//visibility:public"],
-    deps = [
-        "//pkg/logger",
-        "@com_connectrpc_connect//:connect",
-    ],
+    deps = ["@com_connectrpc_connect//:connect"],
 )

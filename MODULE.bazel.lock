@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "b8aa658e4d20d7315ccc126396835a7312bd77cbd079b83eb91729e37f584f1e",
+  "moduleFileHash": "afcba6dfa4fedc26b38ead30fbdc07041b32c6d2ff9353868d981dfbeb7e26ac",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -18,7 +18,7 @@
   "moduleDepGraph": {
     "<root>": {
       "name": "ride_go",
-      "version": "0.1",
+      "version": "0.2",
       "key": "<root>",
       "repoName": "ride_go",
       "executionPlatformsToRegister": [],

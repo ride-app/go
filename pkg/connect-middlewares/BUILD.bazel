@@ -1,9 +1,9 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
-    name = "middlewares_lib",
+    name = "connect-middlewares",
     srcs = ["firebase_auth.go"],
-    importpath = "github.com/deb-tech-n-sol/go/pkg/middlewares",
+    importpath = "github.com/deb-tech-n-sol/go/pkg/connect-middlewares",
     visibility = ["//visibility:public"],
     deps = [
         "@com_connectrpc_authn//:authn",

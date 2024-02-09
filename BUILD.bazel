@@ -1,6 +1,6 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix github.com/deb-tech-n-sol/go
+# gazelle:prefix github.com/dragonfish-tech/go
 # gazelle:build_file_name BUILD.bazel
 # gazelle:proto disable_global
 gazelle(

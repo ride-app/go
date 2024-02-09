@@ -1,9 +1,9 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
-    name = "connect-interceptors",
+    name = "interceptors",
     srcs = ["panic_interceptor.go"],
-    importpath = "github.com/deb-tech-n-sol/go/pkg/connect-interceptors",
+    importpath = "github.com/dragonfish-tech/go/pkg/connect/interceptors",
     visibility = ["//visibility:public"],
     deps = ["@com_connectrpc_connect//:connect"],
 )

@@ -44,7 +44,7 @@ jobs:
       #     verbose: true
 
   compute_impacted_targets:
-    uses: deb-tech-n-sol/workflows/.github/workflows/compute-impacted-targets.yaml@main
+    uses: dragonfish-tech/workflows/.github/workflows/compute-impacted-targets.yaml@main
     secrets: inherit
 
   auto_merge:
@@ -52,4 +52,4 @@ jobs:
       contents: read
       pull-requests: write
     name: Auto Merge PR if bot
-    uses: deb-tech-n-sol/workflows/.github/workflows/auto-merge.yaml@main
+    uses: dragonfish-tech/workflows/.github/workflows/auto-merge.yaml@main

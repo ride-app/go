@@ -1,6 +1,6 @@
 module github.com/dragonfish/go
 
-go 1.21.6
+go 1.22.0
 
 require (
 	connectrpc.com/authn v0.1.0

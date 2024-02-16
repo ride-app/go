@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "afcba6dfa4fedc26b38ead30fbdc07041b32c6d2ff9353868d981dfbeb7e26ac",
+  "moduleFileHash": "1b18ced1f18288dde15708c5438a2df5a41e8affb2531a66bc687a4a8f3fe633",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -18,7 +18,7 @@
   "moduleDepGraph": {
     "<root>": {
       "name": "ride_go",
-      "version": "0.2",
+      "version": "1.0",
       "key": "<root>",
       "repoName": "ride_go",
       "executionPlatformsToRegister": [],
@@ -1047,7 +1047,7 @@
       "general": {
         "bzlTransitiveDigest": "zP01muRk4s4xWGK3gNPXOyDMQkOPsIhu99akeKWFFQ0=",
         "accumulatedFileDigests": {
-          "@@//:go.mod": "1fe7ee0f28a78f3ae2ba80966f60bd897d42f80e20c012f38f5b72b1c37f87a8",
+          "@@//:go.mod": "6bc02d97251f958bd024332fcc0859d13bc832788ac40b6d2263533b5ebac108",
           "@@rules_go~0.44.2//:go.mod": "de22304b720f7f61350ec1c9739de6c0a1b1103fd22bfeb6e92c6c843ddc6d6e",
           "@@//:go.sum": "2a8f3b423d1a1bc829db15d2d67eaf40ba17f88d947a2c8dfd4b64d2628d3e5d",
           "@@gazelle~0.35.0//:go.mod": "48dc6e771c3028ee1c18b9ffc81e596fd5f6d7e0016c5ef280e30f2821f60473",

@@ -1,4 +1,4 @@
-module github.com/dragonfish-tech/go
+module github.com/dragonfish/go
 
 go 1.21.6
 

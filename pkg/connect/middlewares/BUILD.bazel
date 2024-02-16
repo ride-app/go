@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "middlewares",
     srcs = ["firebase_auth.go"],
-    importpath = "github.com/dragonfish-tech/go/pkg/connect/middlewares",
+    importpath = "github.com/dragonfish/go/pkg/connect/middlewares",
     visibility = ["//visibility:public"],
     deps = [
         "@com_connectrpc_authn//:authn",

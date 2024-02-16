@@ -1,6 +1,6 @@
 # Middlewares
 
-`github.com/dragonfish-tech/pkg/middlewares` provides the following middlewares
+`github.com/dragonfish/pkg/middlewares` provides the following middlewares
 
 ## Firebase auth middleware
 
@@ -14,7 +14,7 @@ package main
 import (
   "net/http"
 
-  "github.com/dragonfish-tech/pkg/connect/middlewares"
+  "github.com/dragonfish/pkg/connect/middlewares"
 
   "connectrpc.com/authn"
   "connectrpc.com/authn/internal/gen/authn/ping/v1/pingv1connect"

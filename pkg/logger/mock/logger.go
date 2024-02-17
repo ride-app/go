@@ -1,4 +1,4 @@
-package mocklogger
+package mock_logger
 
 import "github.com/dragonfish/go/pkg/logger"
 

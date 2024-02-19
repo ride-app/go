@@ -1,6 +1,6 @@
 package mock_logger
 
-import "github.com/dragonfish/go/pkg/logger"
+import "github.com/dragonfish/go/v2/pkg/logger"
 
 type MockLogger struct{}
 

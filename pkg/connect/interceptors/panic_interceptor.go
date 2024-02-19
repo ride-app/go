@@ -7,7 +7,7 @@ import (
 	"connectrpc.com/connect"
 )
 
-func NewPanicInterceptor(ctx context.Context) (*connect.UnaryInterceptorFunc, error) {
+func NewPanicInterceptor() (*connect.UnaryInterceptorFunc, error) {
 	interceptor := func(next connect.UnaryFunc) connect.UnaryFunc {
 		var handler connect.UnaryFunc
 

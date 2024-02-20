@@ -12,3 +12,9 @@ go_library(
         "@com_github_micahparks_keyfunc_v3//:keyfunc",
     ],
 )
+
+alias(
+    name = "go_default_library",
+    actual = ":middlewares",
+    visibility = ["//visibility:public"],
+)

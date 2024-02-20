@@ -7,3 +7,9 @@ go_library(
     visibility = ["//visibility:public"],
     deps = ["@com_connectrpc_connect//:connect"],
 )
+
+alias(
+    name = "go_default_library",
+    actual = ":interceptors",
+    visibility = ["//visibility:public"],
+)

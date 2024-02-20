@@ -10,3 +10,9 @@ go_library(
         "@org_uber_go_zap//zapcore",
     ],
 )
+
+alias(
+    name = "go_default_library",
+    actual = ":logger",
+    visibility = ["//visibility:public"],
+)

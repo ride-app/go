@@ -3,6 +3,8 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 # gazelle:prefix github.com/dragonfish/go/v2
 # gazelle:build_file_name BUILD.bazel
 # gazelle:proto disable_global
+# gazelle:go_naming_convention import_alias
+
 gazelle(
     name = "gazelle",
 )

@@ -1,6 +1,9 @@
 package mock_logger
 
-import "github.com/dragonfish/go/v2/pkg/logger"
+import (
+	"context"
+	"github.com/dragonfish/go/v2/pkg/logger"
+)
 
 type MockLogger struct{}
 
@@ -37,5 +40,9 @@ func (l *MockLogger) WithFields(fields map[string]string) logger.Logger {
 }
 
 func (l *MockLogger) WithError(err error) logger.Logger {
+	return l
+}
+
+func (l *MockLogger) WithContext(ctx context.Context) logger.Logger {
 	return l
 }

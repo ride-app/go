@@ -2,10 +2,15 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
     name = "logger",
-    srcs = ["logger.go"],
+    srcs = [
+        "logger.go",
+        "otelzap_logger.go",
+        "zap_logger.go",
+    ],
     importpath = "github.com/dragonfish/go/v2/pkg/logger",
     visibility = ["//visibility:public"],
     deps = [
+        "@com_github_uptrace_opentelemetry_go_extra_otelzap//:otelzap",
         "@org_uber_go_zap//:zap",
         "@org_uber_go_zap//zapcore",
     ],

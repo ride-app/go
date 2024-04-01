@@ -1047,9 +1047,9 @@
       "general": {
         "bzlTransitiveDigest": "zP01muRk4s4xWGK3gNPXOyDMQkOPsIhu99akeKWFFQ0=",
         "accumulatedFileDigests": {
-          "@@//:go.mod": "8a1672a907e2bc4af0ec05b28d24322f9dfa9536e2f5c97c3d287027cba57d68",
+          "@@//:go.mod": "cda8104858172d43f3ec6e437ed6ced258ca413242c8dbe5d0c8ff4a47f8190d",
           "@@rules_go~0.44.2//:go.mod": "de22304b720f7f61350ec1c9739de6c0a1b1103fd22bfeb6e92c6c843ddc6d6e",
-          "@@//:go.sum": "2a8f3b423d1a1bc829db15d2d67eaf40ba17f88d947a2c8dfd4b64d2628d3e5d",
+          "@@//:go.sum": "15a61f1f326109340a5200ad9af0a25ceb399e6b9b26f4c4e868f590e9dd8a55",
           "@@gazelle~0.35.0//:go.mod": "48dc6e771c3028ee1c18b9ffc81e596fd5f6d7e0016c5ef280e30f2821f60473",
           "@@gazelle~0.35.0//:go.sum": "7c4460e8ecb5dd8691a51d4fa2e9e4751108b933636497ce46db499fc2e7a88d",
           "@@rules_go~0.44.2//:go.sum": "d56fdb19b21a5f12bcf625c49432371ac39c2def0f564098fbda107f7c080f40"
@@ -1348,6 +1348,22 @@
               "version": "v1.40.1"
             }
           },
+          "com_github_uptrace_opentelemetry_go_extra_otelutil": {
+            "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
+            "ruleClassName": "go_repository",
+            "attributes": {
+              "name": "gazelle~0.35.0~go_deps~com_github_uptrace_opentelemetry_go_extra_otelutil",
+              "importpath": "github.com/uptrace/opentelemetry-go-extra/otelutil",
+              "build_directives": [],
+              "build_file_generation": "auto",
+              "build_extra_args": [],
+              "patches": [],
+              "patch_args": [],
+              "sum": "h1:LyGS9cIZV0YVhE81zwfMhIE2l2flcj3wn5IoK4VkbWA=",
+              "replace": "",
+              "version": "v0.2.3"
+            }
+          },
           "com_github_google_go_cmp": {
             "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
             "ruleClassName": "go_repository",
@@ -1364,6 +1380,22 @@
               "version": "v0.6.0"
             }
           },
+          "io_opentelemetry_go_otel": {
+            "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
+            "ruleClassName": "go_repository",
+            "attributes": {
+              "name": "gazelle~0.35.0~go_deps~io_opentelemetry_go_otel",
+              "importpath": "go.opentelemetry.io/otel",
+              "build_directives": [],
+              "build_file_generation": "auto",
+              "build_extra_args": [],
+              "patches": [],
+              "patch_args": [],
+              "sum": "h1:TgVozPGZ01nHyDZxK5WGPFB9QexeTMXEH7+tIClWfzs=",
+              "replace": "",
+              "version": "v1.18.0"
+            }
+          },
           "org_golang_x_text": {
             "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
             "ruleClassName": "go_repository",
@@ -1378,6 +1410,22 @@
               "sum": "h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=",
               "replace": "",
               "version": "v0.14.0"
+            }
+          },
+          "io_opentelemetry_go_otel_trace": {
+            "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
+            "ruleClassName": "go_repository",
+            "attributes": {
+              "name": "gazelle~0.35.0~go_deps~io_opentelemetry_go_otel_trace",
+              "importpath": "go.opentelemetry.io/otel/trace",
+              "build_directives": [],
+              "build_file_generation": "auto",
+              "build_extra_args": [],
+              "patches": [],
+              "patch_args": [],
+              "sum": "h1:NY+czwbHbmndxojTEKiSMHkG2ClNH2PwmcHrdo0JY10=",
+              "replace": "",
+              "version": "v1.18.0"
             }
           },
           "org_golang_google_protobuf": {
@@ -1460,6 +1508,22 @@
               "version": "v1.14.0"
             }
           },
+          "com_github_uptrace_opentelemetry_go_extra_otelzap": {
+            "bzlFile": "@@gazelle~0.35.0//internal:go_repository.bzl",
+            "ruleClassName": "go_repository",
+            "attributes": {
+              "name": "gazelle~0.35.0~go_deps~com_github_uptrace_opentelemetry_go_extra_otelzap",
+              "importpath": "github.com/uptrace/opentelemetry-go-extra/otelzap",
+              "build_directives": [],
+              "build_file_generation": "auto",
+              "build_extra_args": [],
+              "patches": [],
+              "patch_args": [],
+              "sum": "h1:2na5W81H38Z4qXCQCuzlcdSMiTWgPJ6XeZIArq6VIJE=",
+              "replace": "",
+              "version": "v0.2.3"
+            }
+          },
           "bazel_gazelle_go_repository_config": {
             "bzlFile": "@@gazelle~0.35.0//internal/bzlmod:go_deps.bzl",
             "ruleClassName": "_go_repository_config",
@@ -1470,8 +1534,12 @@
                 "com_connectrpc_connect": "connectrpc.com/connect",
                 "com_github_micahparks_keyfunc_v3": "github.com/MicahParks/keyfunc/v3",
                 "com_github_golang_jwt_jwt_v5": "github.com/golang-jwt/jwt/v5",
+                "com_github_uptrace_opentelemetry_go_extra_otelzap": "github.com/uptrace/opentelemetry-go-extra/otelzap",
                 "org_uber_go_zap": "go.uber.org/zap",
                 "com_github_micahparks_jwkset": "github.com/MicahParks/jwkset",
+                "com_github_uptrace_opentelemetry_go_extra_otelutil": "github.com/uptrace/opentelemetry-go-extra/otelutil",
+                "io_opentelemetry_go_otel": "go.opentelemetry.io/otel",
+                "io_opentelemetry_go_otel_trace": "go.opentelemetry.io/otel/trace",
                 "org_uber_go_multierr": "go.uber.org/multierr",
                 "org_golang_x_time": "golang.org/x/time",
                 "org_golang_google_protobuf": "google.golang.org/protobuf",
@@ -1542,6 +1610,7 @@
             "com_connectrpc_connect",
             "com_github_micahparks_keyfunc_v3",
             "com_github_golang_jwt_jwt_v5",
+            "com_github_uptrace_opentelemetry_go_extra_otelzap",
             "org_uber_go_zap"
           ],
           "explicitRootModuleDirectDevDeps": [],
